@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b4a128d016.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Certificates and Assignments</a></li>
+                    <li><a href="#contact">Contacts</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I am <span>Surabhi</span><br> Krishna From India</h1>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/Surabhi1.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <ul> 
+                        <li> REGISTER NUMBER : RA2311026010654</li> 
+                        <li> MAIL ID: sk4696@srmist.edu.in</li>
+                        <li> DEPARTMENT: CINTEL</li>
+                        <li> YEAR: 2nd</li>
+                        <li> SEM : 3rd</li>
+                        <li> SECTION: AA-2</li>
+                    </ul>
+
+                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul class="custom-list">
+                            <li><span>Languages</span><br>
+                                <ul>
+                                    <li>HTML/CSS</li>
+                                    <li>Java</li>
+                                    <li>Python</li>
+                                    <li>C++</li>
+                                    
+                                </ul>
+                            </li>
+                            <li><span>Tools</span><br>
+                                <ul>
+                                    <li>Visual Studio Code</li>
+                                    <li>JupyterLab</li>
+                                    <li>Github</li>
+                                    <li> Canva</li>
+                                    
+                                </ul>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - 2024</span><br> Directorate of student affairs - Quiz <i> Member</i></li>
+                            <li><span>2024 - Current</span><br>AARUUSH - <i>CSI Member</i></li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2027</span><br>Bachelor of Technology in Computer Science in soecialization with AI - ML<i>(SRM Institute of Science and Technology, Chennai)</i></li>
+                            <li><span>2021 - 2022</span><br>Senior Secondary Education <i> DPS Ranipur</i></li>
+                            <li><span>2019 - 2020</span><br>High School Education <i> DPS Ranipur</i></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- -----------------services------------ -->
+
+
+     <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Certificates and Assignments</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    
+                    
+                    <a href="images/8hrideathon.jpg"><h2>8 Hour ideathon</h2></a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    
+                    
+                    <a href="images/sustainathon.jpg"><h2>sustain-a-thon</h2></a>
+
+
+                 
+                </div>
+                <div>
+                    <img src="images/codechef icon.png" alt="Codechef Icon" class="certificate-icon">
+                    <a href="images/CodechefContest.png"><h2>Codechef Contest</h2></a>
+                 </div> 
+                 <div>
+                    <img src="images/elab.jpg" alt="E lab Icon" class="certificate-icon">
+                    <a href="images/ELabCompletion.png"><h2>E lab Completion</h2></a>
+                 </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <p>&nbsp;</p>
+                    <a href="images/HackerRank.png"><h2>HackerRank</h2></a>
+                </div>
+                
+
+                <!-- New Assignments -->
+                <!-- Conceptual Task Solution -->
+                <div>
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <a href="files/conceptualtaskdsa.pdf" target="_blank"><h2>Conceptual Task Solution</h2></a>
+                </div>
+
+                <!-- Roleplay Activity -->
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <a href="videos/RoleplayActivity (1).mp4" target="_blank"><h2>Roleplay Activity</h2></a>
+                </div>
+                <div>
+                    <img src="images/worksheeticon.png" alt="Worksheet Icon" class="icon" style="width: 40px; height: 40px;">
+                    <a href="files/Worksheets.pdf"><h2>Worksheets</h2></a>
+                </div>
+
+            </div>
+        </div>
+     </div>
+
+
+
+
+     
+      <!-- --------------------contact-------------------- -->
+       <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>surabhi92005@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/surabhi-krishna-2753b4288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Surabhi690"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Surabhi. Love <span>&#x2764;</span>
+            </p>
+        </div>
+
+       </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+            
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
